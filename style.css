@@ -1,0 +1,120 @@
+/* Yunhan Guo — personal website
+   Clean, minimalist single-column layout. */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #555;
+  --link: #226e93;
+  --maxwidth: 900px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: var(--maxwidth);
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+/* Coauthor links: black text, underlined */
+.paper-meta a {
+  color: var(--text);
+}
+
+/* Intro / header */
+.intro { margin-bottom: 48px; }
+
+.intro-row {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.intro-text { flex: 1; }
+.intro-text .lead { margin-top: 0; }
+.intro-text .contact { margin-bottom: 0; }
+
+.photo {
+  flex-shrink: 0;
+  width: 240px;
+  height: auto;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 32px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.lead {
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+.contact {
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Sections */
+section { margin-bottom: 48px; }
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+/* Papers */
+.paper { margin-bottom: 28px; }
+
+.paper-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.paper-meta {
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.paper-abstract {
+  margin: 0 0 8px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.paper-links {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  main { padding: 40px 20px 64px; }
+  h1 { font-size: 28px; }
+  .intro-row {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+}
