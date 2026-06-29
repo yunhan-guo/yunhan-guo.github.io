@@ -99,6 +99,21 @@ h2 {
 
 .paper-abstract {
   margin: 0 0 8px;
+}
+
+.paper-abstract summary {
+  cursor: pointer;
+  color: var(--link);
+  font-size: 15px;
+  width: fit-content;
+}
+
+.paper-abstract summary:hover {
+  text-decoration: underline;
+}
+
+.paper-abstract p {
+  margin: 8px 0 0;
   text-align: justify;
   font-size: 15px;
 }
